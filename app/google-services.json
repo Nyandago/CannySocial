@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "644531112033",
+    "project_id": "canny-social",
+    "storage_bucket": "canny-social.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644531112033:android:6dc32da731fb3fa8024220",
+        "android_client_info": {
+          "package_name": "com.cannybits.cannysocial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "644531112033-cq4u2m3enilu139bl3i73j7seqtmhrq2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDER_H4VjWLWr9mggDQ7logcnWIAiO3XJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "644531112033-cq4u2m3enilu139bl3i73j7seqtmhrq2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
