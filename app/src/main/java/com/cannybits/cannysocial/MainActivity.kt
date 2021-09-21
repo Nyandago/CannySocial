@@ -9,6 +9,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     private lateinit var toLoginPage : Button
+    private lateinit var toSignUpPage : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,10 +22,16 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        toSignUpPage.setOnClickListener {
+            val intent = Intent(this@MainActivity,SignUpActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 
     private fun initView(){
         toLoginPage = btnToLoginPage
+        toSignUpPage = btnToSignUpPage
     }
 }
