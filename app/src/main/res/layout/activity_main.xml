@@ -35,7 +35,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvWelcomeNote" />
 
     <Button
-        android:id="@+id/btnLogIn"
+        android:id="@+id/btnToLoginPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Log In"
@@ -53,7 +53,7 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogIn" />
+        app:layout_constraintTop_toBottomOf="@+id/btnToLoginPage" />
 
     <Button
         android:id="@+id/btnSignUp"
