@@ -8,7 +8,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var btnLogIn : Button
+    private lateinit var loginButton : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         initView()
 
-        btnLogIn.setOnClickListener {
+        loginButton.setOnClickListener {
             val intent = Intent(this@MainActivity, LoginActivity::class.java)
             startActivity(intent)
         }
@@ -25,6 +25,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initView(){
-        btnLogIn = btnSignIn
+        loginButton = btnLogIn
     }
 }
