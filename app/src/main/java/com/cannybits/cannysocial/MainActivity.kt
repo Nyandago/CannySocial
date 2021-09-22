@@ -17,18 +17,6 @@ class MainActivity : AppCompatActivity() {
 
         initView()
 
-        toLoginPage.setOnClickListener {
-          Intent(this@MainActivity, LoginActivity::class.java).also {
-              startActivity(it)
-          }
-        }
-
-        toSignUpPage.setOnClickListener {
-        Intent(this@MainActivity,SignUpActivity::class.java).also {
-            startActivity(it)
-        }
-
-        }
 
 
     }
