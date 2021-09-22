@@ -18,13 +18,16 @@ class MainActivity : AppCompatActivity() {
         initView()
 
         toLoginPage.setOnClickListener {
-            val intent = Intent(this@MainActivity, LoginActivity::class.java)
-            startActivity(intent)
+          Intent(this@MainActivity, LoginActivity::class.java).also {
+              startActivity(it)
+          }
         }
 
         toSignUpPage.setOnClickListener {
-            val intent = Intent(this@MainActivity,SignUpActivity::class.java)
-            startActivity(intent)
+        Intent(this@MainActivity,SignUpActivity::class.java).also {
+            startActivity(it)
+        }
+
         }
 
 
