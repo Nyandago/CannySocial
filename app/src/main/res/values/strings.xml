@@ -3,6 +3,6 @@
     <string name="welcome_note">Hello!<br /> Welcome to Canny Social!<br /> The right place to connect with everyone! </string>
     <string name="sign_in_note">Have an account?</string>
     <string name="sign_up_note">Don\'t have an account?</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>
