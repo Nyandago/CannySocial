@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.fragment_welcome.view.*
 
 class WelcomeFragment : Fragment() {
 
-   var mAuth : FirebaseAuth? = null
+  private var mAuth : FirebaseAuth? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -58,6 +58,7 @@ class WelcomeFragment : Fragment() {
     }
 
     private fun signInWithGoogle(){
+
 
     }
 
