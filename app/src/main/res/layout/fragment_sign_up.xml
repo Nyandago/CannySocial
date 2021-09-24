@@ -23,11 +23,12 @@
 
     <EditText
         android:id="@+id/etEmailSignup"
-        android:layout_width="0dp"
-        android:layout_height="47dp"
+        android:layout_width="397dp"
+        android:layout_height="57dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:hint="Email Address"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,6 +41,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:hint="Password"
+        android:textSize="24sp"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
