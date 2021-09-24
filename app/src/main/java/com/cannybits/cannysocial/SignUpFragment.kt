@@ -39,6 +39,7 @@ class SignUpFragment : Fragment() {
 
             //Go to user profile page
             Navigation.findNavController(view).navigate(R.id.action_signUpFragment_to_userProfileFragment)
+            clearScreen()
         }
 
         return view
@@ -57,6 +58,11 @@ class SignUpFragment : Fragment() {
                     }
                 }
         }
+
+    private fun clearScreen(){
+        etEmailSignup.setText("")
+        etPasswordSignup.setText("")
+    }
 
 
 

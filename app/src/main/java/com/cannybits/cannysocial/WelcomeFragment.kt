@@ -32,6 +32,7 @@ class WelcomeFragment : Fragment() {
 
             signInWithEmailAndPassword(email, password)
             Navigation.findNavController(view).navigate(R.id.action_welcomeFragment_to_userProfileFragment)
+            clearScreen()
         }
 
         view.btnSignInWithGoogle.setOnClickListener {
@@ -57,6 +58,12 @@ class WelcomeFragment : Fragment() {
     }
 
     private fun signInWithGoogle(){
+
+    }
+
+    private fun clearScreen(){
+        etEmailSignIn.setText("")
+        etPasswordSignIn.setText("")
 
     }
 
