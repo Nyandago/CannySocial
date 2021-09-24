@@ -53,7 +53,7 @@ class SignUpFragment : Fragment() {
                         val user = task.result!!.user
                        Log.d("User","Success: Added user ="+user.toString())
                     } else {
-                        Log.d("User","Add Failed")
+                        Log.d("User","Add Failed: $task")
                     }
                 }
         }
