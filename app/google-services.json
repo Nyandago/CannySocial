@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "644531112033",
+    "firebase_url": "https://canny-social-default-rtdb.firebaseio.com",
     "project_id": "canny-social",
     "storage_bucket": "canny-social.appspot.com"
   },
