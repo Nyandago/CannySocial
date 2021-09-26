@@ -64,10 +64,6 @@ class MainActivity : AppCompatActivity() {
             val password = passwordSignIn.text.toString()
 
             signInWithEmailAndPassword(email, password)
-            Intent(this, UserProfileActivity::class.java).also {
-                startActivity(it)
-            }
-            clearEditText()
         }
 
     }
@@ -136,8 +132,15 @@ class MainActivity : AppCompatActivity() {
             .addOnCompleteListener(){
                 if(it.isSuccessful){
                     Toast.makeText(this,"User Logged In Successfully", Toast.LENGTH_LONG).show()
+                    Intent(this, UserProfileActivity::class.java).also {
+                        startActivity(it)
+                    }
+                    clearEditText()
                 } else{
                     Toast.makeText(this,"User Login Failed", Toast.LENGTH_LONG).show()
+                    Intent(this, MainActivity::class.java).also {
+                        startActivity(it)
+                    }
                 }
             }
     }
