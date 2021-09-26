@@ -101,7 +101,7 @@ class MainActivity : AppCompatActivity() {
                 UpdateUI(account)
             }
         } catch (e: ApiException){
-            Toast.makeText(this,e.toString(), Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,e.toString(), Toast.LENGTH_LONG).show()
         }
     }
 
@@ -114,6 +114,11 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this, UserProfileActivity::class.java)
                 startActivity(intent)
                 finish()
+            } else{
+                Toast.makeText(this, "Google SignIn Failed", Toast.LENGTH_LONG).show()
+                Intent(this, MainActivity::class.java).also {
+                    startActivity(it)
+                }
             }
         }
     }
