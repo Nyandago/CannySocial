@@ -33,7 +33,7 @@ class SignUpActivity : AppCompatActivity() {
             Intent(this, UserProfileActivity::class.java).also {
                 startActivity(it)
             }
-            clearScreen()
+            clearEditText()
         }
 
         googleSignUp.setOnClickListener {
@@ -64,7 +64,7 @@ class SignUpActivity : AppCompatActivity() {
         googleSignUp = btnSignUpWithGoogle
     }
 
-    private fun clearScreen(){
+    private fun clearEditText(){
         emailSignUp.setText("")
         passwordSignUp.setText("")
     }
